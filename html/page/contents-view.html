@@ -18,10 +18,10 @@
 
 <div class="wrapper"><!-- start : wrapper -->
 
-    <header><!-- start : header -->
+    <header class="view-type"><!-- start : header -->
         <div class="rela">
             <h1>
-                <a href="javascript:void(0)"><img src="../../assets/image/etc/etc-logo.svg" /></a>
+                <a href="javascript:void(0)"><img src="../../assets/image/etc/etc-logo-gray.svg" /></a>
             </h1>
             <div class="gnb-box">
                 <ul class="gnb-list">
@@ -131,58 +131,72 @@
 
     <div class="container" id="contents"><!-- start : container -->
 
-        <section class="sub-header-wrap" style="background:url(../../assets/image/etc/etc-header-health.jpg);">
-            <div class="mtit">스마트 헬스케어</div>
-            <ul>
-                <li><img src="../../assets/image/ico/ico-home.svg" /></li>
-                <li>콘텐츠 소개</li>
-                <li>스마트 헬스케어</li>
-            </ul>
+        <section class="sub-view-header-wrap">
+            <div class="video-item-wrap">
+                <video width="100%" height="100%" id="v_player" playsinline="" allowfullscreen="true" >
+                    <source src="../../assets/video/dance-view.mp4" type="video/mp4">
+                </video>
+                <button class="enter-play-btn" type="button"><img src="../../assets/image/ico/ico-play.svg" /></button>
+            </div>
         </section>
+
+        <script>
+			var vid = document.getElementById("v_player");
+			vid.onended = function() {
+				$(".enter-play-btn").removeClass("hide");
+			};
+			$(function(){
+				$("body").on("click", ".enter-play-btn", function(){
+					vid.play();
+					$(this).addClass("hide");
+				});
+
+			});
+        </script>
 
         <!--
         aos="fade-right" data-aos-delay="50"
         -->
 
-        <section class="health-page-wrap">
-            <ul>
-                <li>
-                    <div class="mpic" style="background:url(../../assets/image/etc/etc-health-list01.jpg);"></div>
-                    <div class="mcont">
-                        <div class="mtit">VR 인지 기능 재활훈련 프로그램 마이크렛</div>
-                        <div class="mdesc">비대면 스마트 헬스 케어를 위한 VR 인지등에 재활훈련
-                            <br />프로그램으로 약 3분동안 6가지 인지기능을 기반으로 평가</div>
-                        <a href="javascript:void(0)">신청하기</a>
+        <section class="view-page-wrap">
+            <div class="lt-item">
+                <div class="mtit">인지평가 평가지표</div>
+                <div class="mdesc">노인의 경도인지장애 예방 및 인지개선을 위한 동작인식분석평가 기술 기반의 VR인지평가 및 VR인지기능재활훈련 프로그램으로, 의학적 실증을 통한 인지평가 평가지표에 따라 알고리즘을 완성하여 개발된 VR시나리오의 가상환경을 이용해 뇌를 반복하여 훈련하고 자극하여 인지에 의한 판단과 상황 해결에 도움을 줄 수 있습니다.</div>
+                <div class="mpic"><img src="../../assets/image/etc/etc-contents-view.jpg" /></div>
+                <div class="mdesc">노인의 경도인지장애 예방 및 인지개선을 위한 동작인식분석평가 기술 기반의 VR인지평가 및 VR인지기능재활훈련 프로그램으로, 의학적 실증을 통한 인지평가 평가지표에 따라 알고리즘을 완성하여 개발된 VR시나리오의 가상환경을 이용해 뇌를 반복하여 훈련하고 자극하여 인지에 의한 판단과 상황 해결에 도움을 줄 수 있습니다.</div>
+
+                <div class="mtit">인지평가 평가지표</div>
+                <div class="mdesc">노인의 경도인지장애 예방 및 인지개선을 위한 동작인식분석평가 기술 기반의 VR인지평가 및 VR인지기능재활훈련 프로그램으로, 의학적 실증을 통한 인지평가 평가지표에 따라 알고리즘을 완성하여 개발된 VR시나리오의 가상환경을 이용해 뇌를 반복하여 훈련하고 자극하여 인지에 의한 판단과 상황 해결에 도움을 줄 수 있습니다.</div>
+                <div class="mdesc">노인의 경도인지장애 예방 및 인지개선을 위한 동작인식분석평가 기술 기반의 VR인지평가 및 VR인지기능재활훈련 프로그램으로, 의학적 실증을 통한 인지평가 평가지표에 따라 알고리즘을 완성하여 개발된 VR시나리오의 가상환경을 이용해 뇌를 반복하여 훈련하고 자극하여 인지에 의한 판단과 상황 해결에 도움을 줄 수 있습니다.</div>
+            </div>
+            <div class="rt-item">
+                <div class="info-rela">
+                    <div class="mtit">VR 인지 기능 재활훈련 <br />프로그램 마이크렛</div>
+                    <ul>
+                        <li>
+                            <div class="key">· 구분</div>
+                            <div class="value">스마트 헬스케어</div>
+                        </li>
+                        <li>
+                            <div class="key">· 카테고리</div>
+                            <div class="value">인지재활</div>
+                        </li>
+                        <li>
+                            <div class="key">· 진행시간</div>
+                            <div class="value">6분</div>
+                        </li>
+                    </ul>
+                    <div class="btn-item-wrap">
+                        <button type="button">신청하기</button>
                     </div>
-                </li>
-                <li>
-                    <div class="mpic" style="background:url(../../assets/image/etc/etc-health-list02.jpg);"></div>
-                    <div class="mcont">
-                        <div class="mtit">여러 형태의 클라우드 제공</div>
-                        <div class="mdesc">비대면 스마트 헬스 케어를 위한 VR 인지등에 재활훈련
-                            <br />프로그램으로 약 3분동안 6가지 인지기능을 기반으로 평가</div>
-                        <a href="javascript:void(0)">신청하기</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="mpic" style="background:url(../../assets/image/etc/etc-health-list03.jpg);"></div>
-                    <div class="mcont">
-                        <div class="mtit">똑똑하게 건강하게! 스마트 헬스케어</div>
-                        <div class="mdesc">하루 종일 회사에서 모니터만 보다가 퇴근하니 온몸이 뻐근하신가요? 맛있는 삼겹살을
-                            <br />지글지글 구워 먹고나서야 건강이 걱정된 적이 있으신가요? 그렇다면 여기를 주목하세요.</div>
-                        <a href="javascript:void(0)">신청하기</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="mpic" style="background:url(../../assets/image/etc/etc-health-list04.jpg);"></div>
-                    <div class="mcont">
-                        <div class="mtit">치료와 병원 중심에서 예방과 환자 중심으로!</div>
-                        <div class="mdesc">‘의료기술’이라고 하면 병원에서 치료받는 모습이 가장 먼저 떠오르진 않나요? 스마트 헬스
-                            <br />케어는 이런 병원의 치료 중심에서 질병의 예방에 집중하고 있습니다. 개인의 질환을 관리하고 예방하는데 더 적합한</div>
-                        <a href="javascript:void(0)">신청하기</a>
-                    </div>
-                </li>
-            </ul>
+                </div>
+                <div class="link-item-wrap">
+                    <a href="javascript:void(0)">
+                        <span>목록으로 이동</span>
+                        <img src="../../assets/image/ico/ico-mb-arr.svg" />
+                    </a>
+                </div>
+            </div>
         </section>
 
 
