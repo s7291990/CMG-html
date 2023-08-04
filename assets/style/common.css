@@ -108,24 +108,13 @@ a.cubic:hover{opacity:.8;-webkit-transform: scale(0.95);-webkit-transition-timin
 
 .hidden{position:absolute;left:-20000px;}
 
-select {cursor:pointer;outline:none;background:url(../image/bg/bg-select01.png) no-repeat right center;background-size:30px 30px;appearance: none;-moz-appearance:none;-webkit-appearance: none;}
+select {cursor:pointer;outline:none;background:url(../image/bg/bg-select.svg) no-repeat right center;background-size:25px 8px;appearance: none;-moz-appearance:none;-webkit-appearance: none;}
 select::-ms-expand {display:none}
 
-input[type=checkbox]{outline:none;float:left;background:url(../image/bg/bg-chk-off.png) no-repeat;background-size:32px 32px;border:0;width:32px;height:32px;overflow:hidden;appearance: none;-moz-appearance: none;-webkit-appearance: none;}
-input[type=checkbox]:checked{width:32px;height:32px;background:url(../image/bg/bg-chk-on.png) no-repeat;background-size:32px 32px;}
-input[type=checkbox]::-ms-check{border:0;outline:none;appearance: none;-moz-appearance: none;-webkit-appearance: none;width:32px;height:32px;content:"";background:url(../image/bg/bg-chk-off.png) no-repeat;background-size:32px 32px;}
-input[type=checkbox]:checked::-ms-check{color:transparent;background:url(../image/bg/bg-chk-on.png) no-repeat;background-size:32px 32px;}
-
-input.chk01[type=checkbox]{outline:none;float:left;background:url(../image/bg/bg-chk-off.svg) no-repeat;background-size:20px 20px;border:0;width:20px;height:20px;overflow:hidden;appearance: none;-moz-appearance: none;-webkit-appearance: none;}
-input.chk01[type=checkbox]:checked{width:20px;height:20px;background:url(../image/bg/bg-chk-on.svg) no-repeat;background-size:20px 20px;}
-input.chk01[type=checkbox]::-ms-check{border:0;outline:none;appearance: none;-moz-appearance: none;-webkit-appearance: none;width:20px;height:20px;content:"";background:url(../image/bg/bg-chk-off.svg) no-repeat;background-size:20px 20px;}
-input.chk01[type=checkbox]:checked::-ms-check{color:transparent;background:url(../image/bg/bg-chk-on.svg) no-repeat;background-size:20px 20px;}
-
-
-input[type=radio]{outline:none;float:left;background:url(../image/bg/bg-rd-off.svg) no-repeat;background-size:20px 20px;border:0;width:20px;height:20px;overflow:hidden;appearance: none;-moz-appearance: none;-webkit-appearance: none;}
-input[type=radio]:checked{width:20px;height:20px;background:url(../image/bg/bg-rd-on.svg) no-repeat;background-size:20px 20px;}
-input[type=radio]::-ms-check{border:0;outline:none;appearance: none;-moz-appearance: none;-webkit-appearance: none;width:20px;height:20px;content:"";background:url(../image/bg/bg-rd-off.svg) no-repeat;background-size:20px 20px;}
-input[type=radio]:checked::-ms-check{color:transparent;background:url(../image/bg/bg-rd-on.svg) no-repeat;background-size:20px 20px;}
+input[type=checkbox]{outline:none;float:left;background:url(../image/bg/bg-chk-off.svg) no-repeat;background-size:24px 24px;border:0;width:24px;height:24px;overflow:hidden;appearance: none;-moz-appearance: none;-webkit-appearance: none;}
+input[type=checkbox]:checked{width:24px;height:24px;background:url(../image/bg/bg-chk-on.svg) no-repeat;background-size:24px 24px;}
+input[type=checkbox]::-ms-check{border:0;outline:none;appearance: none;-moz-appearance: none;-webkit-appearance: none;width:24px;height:24px;content:"";background:url(../image/bg/bg-chk-off.svg) no-repeat;background-size:24px 24px;}
+input[type=checkbox]:checked::-ms-check{color:transparent;background:url(../image/bg/bg-chk-on.svg) no-repeat;background-size:24px 24px;}
 
 input{outline:none;}
 button{cursor:pointer;outline:none;}

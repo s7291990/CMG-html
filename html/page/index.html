@@ -45,12 +45,7 @@
 
         <div class="totalmenu-wrap">
             <div class="rela01">
-                <div class="mob-link-wrap">
-                    <a href="javascript:void(0)" class="btn-link-shop">
-                        <span>로그인 · 회원가입</span>
-                        <img src="../../assets/image/ico/ico-mb-arr.svg" />
-                    </a>
-                </div>
+
                 <ul>
                     <li>
                         <a href="javascript:void(0)">
@@ -209,59 +204,78 @@
         <section class="main-contents-wrap">
             <div class="mtit">콘텐츠</div>
             <div class="mdesc">씨엠지의 다양한 콘텐츠를 만나보세요.</div>
-            <ul>
-                <li>
-                    <a href="javascript:void(0)">
-                        <div class="mpic">
-                            <div class="stit">스마트 헬스케어</div>
-                            <div class="sdesc">인지개선을 위한 동작인식분석평가 기술 기반의
-                                <br />VR인지평가 및 VR인지기능재활훈련 프로그램</div>
-                            <div class="more">더보기</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)">
-                        <div class="mpic">
-                            <div class="stit">여러 형태의 클라우드 제공</div>
-                            <div class="sdesc">멀티클라우드는 두 곳 이상의 클라우드 공급업체가
-                                <br />제공하는 클라우드 서비스</div>
-                            <div class="more">더보기</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)">
-                        <div class="mpic">
-                            <div class="stit">똑똑하게 건강하게! 스마트 헬스케어</div>
-                            <div class="sdesc">멀티클라우드는 두 곳 이상의 클라우드 공급업체가
-                                <br />제공하는 클라우드 서비스</div>
-                            <div class="more">더보기</div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+
+            <!-- Swiper -->
+            <div id="clist-slide01" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="javascript:void(0)">
+                            <div class="mpic" style="background:url(../../assets/image/etc/etc-contents-list01.jpg);">
+                                <div class="stit">스마트 헬스케어</div>
+                                <div class="sdesc">인지개선을 위한 동작인식분석평가 기술 기반의
+                                    <br />VR인지평가 및 VR인지기능재활훈련 프로그램</div>
+                                <div class="more">더보기</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="javascript:void(0)">
+                            <div class="mpic" style="background:url(../../assets/image/etc/etc-contents-list02.jpg);">
+                                <div class="stit">여러 형태의 클라우드 제공</div>
+                                <div class="sdesc">멀티클라우드는 두 곳 이상의 클라우드 공급업체가
+                                    <br />제공하는 클라우드 서비스</div>
+                                <div class="more">더보기</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="javascript:void(0)">
+                            <div class="mpic" style="background:url(../../assets/image/etc/etc-contents-list03.jpg);">
+                                <div class="stit">똑똑하게 건강하게! 스마트 헬스케어</div>
+                                <div class="sdesc">멀티클라우드는 두 곳 이상의 클라우드 공급업체가
+                                    <br />제공하는 클라우드 서비스</div>
+                                <div class="more">더보기</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <script>
+				var clistSlide01 = new Swiper('#clist-slide01', {
+					slidesPerView: "auto",
+					spaceBetween: 54,
+					observer: true,
+					observeParents: true,
+					pagination: {
+						el: ".swiper-pagination",
+						type: "progressbar",
+					},
+
+				});
+            </script>
         </section>
 
         <section class="main-why-wrap">
             <div class="mtit">Why, <br />씨엠지-LMS</div>
             <ul>
                 <li>
-                    <div class="sico"></div>
+                    <div class="sico"><img src="../../assets/image/ico/ico-why-list01.svg" /></div>
                     <div class="stit">VR을 이용한 가상세계</div>
                     <div class="sdesc">현실세계와 비슷한 가상 환경 구축으로
                         <br />쉬운 접근 유도현실세계와 비슷한
                         <br />가상 환경 구축으로 쉬운 접근 유도</div>
                 </li>
                 <li>
-                    <div class="sico"></div>
+                    <div class="sico"><img src="../../assets/image/ico/ico-why-list02.svg" /></div>
                     <div class="stit">데이터를 기반으로 한 반복 훈련 및 개선</div>
                     <div class="sdesc">디테일한 데이터로 개선방향을 제공하고
                         <br />빅데이터 분석 기법을 활용하여 분석을 통해
                         <br />문제점 개선</div>
                 </li>
                 <li>
-                    <div class="sico"></div>
+                    <div class="sico"><img src="../../assets/image/ico/ico-why-list03.svg" /></div>
                     <div class="stit">유수의 대학 및 의료기관 참여 콘텐츠</div>
                     <div class="sdesc">관련 기관 및 대학이 함께
                         <br />콘텐츠 개발</div>
@@ -347,16 +361,16 @@
                 <br /><strong>씨엠지 - LMS Platform</strong>
             </div>
             <ul>
-                <li><img src="" /></li>
-                <li><img src="" /></li>
-                <li><img src="" /></li>
-                <li><img src="" /></li>
-                <li><img src="" /></li>
-                <li><img src="" /></li>
-                <li><img src="" /></li>
-                <li><img src="" /></li>
-                <li><img src="" /></li>
-                <li><img src="" /></li>
+                <li><img src="../../assets/image/etc/etc-partner-list01.png" /></li>
+                <li><img src="../../assets/image/etc/etc-partner-list02.png" /></li>
+                <li><img src="../../assets/image/etc/etc-partner-list03.png" /></li>
+                <li><img src="../../assets/image/etc/etc-partner-list04.png" /></li>
+                <li><img src="../../assets/image/etc/etc-partner-list05.png" /></li>
+                <li><img src="../../assets/image/etc/etc-partner-list06.png" /></li>
+                <li><img src="../../assets/image/etc/etc-partner-list07.png" /></li>
+                <li><img src="../../assets/image/etc/etc-partner-list08.png" /></li>
+                <li><img src="../../assets/image/etc/etc-partner-list09.png" /></li>
+                <li><img src="../../assets/image/etc/etc-partner-list10.png" /></li>
             </ul>
         </section>
 
@@ -368,10 +382,9 @@
             <div class="rela">
                 <div class="lt-item"><img src="../../assets/image/etc/etc-logo.svg" /></div>
                 <ul class="fnb-list">
-                    <li><a href="javascript:void(0)">개인정보처리방침</a></li>
                     <li><a href="javascript:void(0)">이용약관</a></li>
-                    <li><a href="javascript:void(0)">이메일무단수집거부</a></li>
-                    <li><a href="javascript:void(0)">문의하기</a></li>
+                    <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+                    <li><a href="javascript:void(0)">제품문의</a></li>
                 </ul>
             </div>
             <div class="rela t01">
