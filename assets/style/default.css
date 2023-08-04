@@ -241,3 +241,53 @@ footer .rela .fnb-list{display:none;}
     .main-slide-wrap .swiper-container .swiper-slide .desc{font-size:14px;}
 
 }
+
+/**/
+.main-contents-wrap{}
+.main-contents-wrap .mtit{}
+.main-contents-wrap .mdesc{}
+.main-contents-wrap ul{}
+.main-contents-wrap ul li{}
+.main-contents-wrap ul li a{}
+.main-contents-wrap ul li a .mpic{}
+.main-contents-wrap ul li a .mpic .stit{}
+.main-contents-wrap ul li a .mpic .sdesc{}
+.main-contents-wrap ul li a .mpic .more{}
+
+.main-why-wrap{}
+.main-why-wrap .mtit{}
+.main-why-wrap ul{}
+.main-why-wrap ul li{}
+.main-why-wrap ul li .sico{}
+.main-why-wrap ul li .stit{}
+.main-why-wrap ul li .sdesc{}
+
+.main-latest-wrap{}
+.main-latest-wrap .mitem{}
+.main-latest-wrap .mitem .latest-header-wrap{}
+.main-latest-wrap .mitem .latest-header-wrap .mtit{}
+.main-latest-wrap .mitem .latest-header-wrap a{}
+.main-latest-wrap .mitem .latest-header-wrap a span{}
+.main-latest-wrap .mitem .latest-header-wrap a img{}
+.main-latest-wrap .mitem ul{}
+.main-latest-wrap .mitem ul li{}
+.main-latest-wrap .mitem ul li a{}
+.main-latest-wrap .mitem ul li a .stit{}
+.main-latest-wrap .mitem ul li a .sdate{}
+
+
+.main-partner-wrap{}
+.main-partner-wrap .mtit{}
+.main-partner-wrap .mtit strong{}
+.main-partner-wrap ul{}
+.main-partner-wrap ul li{}
+.main-partner-wrap ul li img{}
+
+.health-page-wrap{}
+.health-page-wrap ul{}
+.health-page-wrap ul li{}
+.health-page-wrap ul li .mpic{}
+.health-page-wrap ul li .mcont{}
+.health-page-wrap ul li .mcont .mtit{}
+.health-page-wrap ul li .mcont .mdesc{}
+.health-page-wrap ul li .mcont a{}
