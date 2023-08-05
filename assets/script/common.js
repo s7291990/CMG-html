@@ -185,17 +185,15 @@ common = {
             $(".totalmenu-wrap").removeClass("on");
         });
         $("body").on("click", ".btn-total-nav", function(ev){
-            var ck = $(".side-cont").hasClass("on");
-            if(ck){
-                $(".side-cont").removeClass("on");
-                $("header").removeClass("active");
-                $(".totalmenu-wrap").removeClass("on");
-            }else{
-                $(".side-cont").addClass("on");
-                $("header").addClass("active");
-                $(".totalmenu-wrap").addClass("on");
-            }
+			$(".side-cont").addClass("on");
+			$("header").addClass("active");
+			$(".totalmenu-wrap").addClass("on");
         });
+		$("body").on("click", ".totalmenu-close", function(ev){
+			$(".side-cont").removeClass("on");
+			$("header").removeClass("active");
+			$(".totalmenu-wrap").removeClass("on");
+		});
 
         $("body").on("mouseenter", ".gnb-box", function(ev){
             ev.preventDefault();

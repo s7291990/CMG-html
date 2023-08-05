@@ -45,7 +45,10 @@
 
         <div class="totalmenu-wrap">
             <div class="rela01">
-
+                <div class="mob-header-wrap">
+                    <a href="javascript:void(0)"><img src="../../assets/image/etc/etc-logo-gray.svg" width="84" height="34" /></a>
+                    <a href="javascript:void(0)" class="totalmenu-close"><img src="../../assets/image/ico/ico-totalmenu-close.svg" /></a>
+                </div>
                 <ul>
                     <li>
                         <a href="javascript:void(0)">
@@ -118,6 +121,10 @@
                         </div>
                     </li>
                 </ul>
+
+                <div class="mob-login-wrap">
+                    <a href="javascript:void(0)">로그인 · 회원가입</a>
+                </div>
 
             </div>
         </div>
@@ -251,6 +258,15 @@
 					pagination: {
 						el: ".swiper-pagination",
 						type: "progressbar",
+					},
+					breakpoints: {
+						320: {
+							spaceBetween: 20,
+						},
+						// when window width is >= 640px
+						1024: {
+							spaceBetween: 54,
+						}
 					},
 
 				});
