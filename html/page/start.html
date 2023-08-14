@@ -116,15 +116,17 @@
 
                 <div class="label">Output Image Size</div>
                 <div class="chk-btn-wrap">
-                    <button type="button" class="on">1:1</button>
-                    <button type="button">2:3</button>
-                    <button type="button">1:1</button>
+                    <button type="button" class="on btn-size01">1:1</button>
+                    <button type="button" class="btn-size01">2:3</button>
+                    <button type="button" class="btn-size01">1:1</button>
                 </div>
                 <div class="chk-btn-wrap type01">
-                    <button type="button" class="on">960 x 960</button>
-                    <button type="button">1280 x 1280</button>
-                    <button type="button">2560 x 2560</button>
-                    <button type="button">4096 x 4096</button>
+                    <button type="button" class="on btn-size02">960 x 960</button>
+                    <button type="button" class="btn-size02">1280 x 1280</button>
+                </div>
+                <div class="chk-btn-wrap type01">
+                    <button type="button" class="btn-size02">2560 x 2560</button>
+                    <button type="button" class="btn-size02">4096 x 4096</button>
                 </div>
 
                 <div class="stit">Width</div>
@@ -149,7 +151,12 @@
                     </div>
                 </div>
 
-                <div class="label">Image Step</div>
+                <div class="label">Image Step
+                    <div class="tooltip">
+                        <img src="../../assets/image/ico/ico-tooltip.svg"/>
+                        <div class="tooltip-item-wrap">툴팁내용</div>
+                    </div>
+                </div>
                 <div class="output-item-wrap">
                     <div class="slide-item-wrap">
                         <div id="slider-range-max03"></div>
@@ -159,9 +166,122 @@
                     </div>
                 </div>
 
+                <div class="label">Seed Option
+                    <input type="checkbox" />
+                    <div class="tooltip">
+                        <img src="../../assets/image/ico/ico-tooltip.svg"/>
+                        <div class="tooltip-item-wrap">툴팁내용</div>
+                    </div>
+                </div>
+                <div class="output-item-wrap">
+                    <div class="slide-value-wrap full">
+                        <div class="value">369574</div>
+                    </div>
+                </div>
+
+                <div class="label">Init Image Url
+                    <input type="checkbox" />
+                    <div class="tooltip">
+                        <img src="../../assets/image/ico/ico-tooltip.svg"/>
+                        <div class="tooltip-item-wrap">툴팁내용</div>
+                    </div>
+                </div>
+                <div class="output-item-wrap">
+                    <label class="file-item-wrap">
+                        <input type="file" />
+                        <img src="../../assets/image/ico/ico-upload.svg" />
+                        <span>Click to <strong>Upload Your File</strong> or
+                        <br />Drag and Drop Tour File Here</span>
+                    </label>
+                </div>
+
+                <div class="label">Professional Option
+                    <input type="checkbox" />
+                    <div class="tooltip">
+                        <img src="../../assets/image/ico/ico-tooltip.svg"/>
+                        <div class="tooltip-item-wrap">툴팁내용</div>
+                    </div>
+                </div>
+                <div class="stit">Prompt Weight</div>
+                <div class="output-item-wrap">
+                    <div class="slide-item-wrap">
+                        <div id="slider-range-max04"></div>
+                    </div>
+                    <div class="slide-value-wrap">
+                        <div id="value04" class="value">960</div>
+                    </div>
+                </div>
+                <div class="stit">Image Weight</div>
+                <div class="output-item-wrap">
+                    <div class="slide-item-wrap">
+                        <div id="slider-range-max05"></div>
+                    </div>
+                    <div class="slide-value-wrap">
+                        <div id="value05" class="value">960</div>
+                    </div>
+                </div>
+
 
             </div>
-            <div class="rt-item"></div>
+            <div class="rt-item">
+                <div class="label">Select PenCake Engine
+                    <div class="tooltip">
+                        <img src="../../assets/image/ico/ico-tooltip.svg"/>
+                        <div class="tooltip-item-wrap">툴팁내용</div>
+                    </div>
+                </div>
+                <div class="form-item-wrap">
+                    <select class="select">
+                        <option>생성하려고 하는 이미지의 스타일을 선택할 수 있습니다.</option>
+                    </select>
+                </div>
+
+                <div class="label">Enter  Prompt</div>
+                <div class="form-item-wrap">
+                    <textarea class="textarea" placeholder="생성하려고 하는 대상 키워드, 혹은 문장을 입력하세요"></textarea>
+                    <button type="button">이미지 생성하기</button>
+                </div>
+                <div class="chk-item-wrap">
+                    <input type="checkbox" />
+                    <span>Negative Prompt</span>
+                </div>
+                <div class="chk-item-wrap">
+                    <input type="checkbox" />
+                    <span>Magic Prompt</span>
+                </div>
+
+                <div class="ai-image-wrap">
+                    <div class="ai-header">
+                        <div class="mdesc">예쁜 여자가 고향을 그리워한다. 그 여자가 슬퍼하고 있다. 그러다가 미친듯이 기뻐한다.</div>
+                        <div class="side-btn-wrap">
+                            <span>Artist v0.3.0 beta</span>
+                            <button type="button"><img src="../../assets/image/ico/ico-remove.svg" /></button>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                    </ul>
+                </div>
+
+                <div class="ai-image-wrap">
+                    <div class="ai-header">
+                        <div class="mdesc">끊임없는 계단이 있다. 사람이 계단 꼭대기에 서 있다. 에니메이션 효과</div>
+                        <div class="side-btn-wrap">
+                            <span>Artist v0.3.0 beta</span>
+                            <button type="button"><img src="../../assets/image/ico/ico-remove.svg" /></button>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
     </div><!-- end : container -->
@@ -169,6 +289,60 @@
 
 </div>
 
+<script>
+    $(function(){
+		$("#slider-range-max01").slider({
+			range: "max",
+			min: 0,
+			max: 100,
+			value: 15,
+			stop: function( event, ui ) {
+				//$( "#amount" ).val( ui.value );
+				$("#value01").text(ui.value);
+			}
+		});
+		$("#slider-range-max02").slider({
+			range: "max",
+			min: 0,
+			max: 100,
+			value: 15,
+			stop: function( event, ui ) {
+				//$( "#amount" ).val( ui.value );
+				$("#value02").text(ui.value);
+			}
+		});
+		$("#slider-range-max03").slider({
+			range: "max",
+			min: 0,
+			max: 100,
+			value: 15,
+			stop: function( event, ui ) {
+				//$( "#amount" ).val( ui.value );
+				$("#value03").text(ui.value);
+			}
+		});
+		$("#slider-range-max04").slider({
+			range: "max",
+			min: 0,
+			max: 100,
+			value: 15,
+			stop: function( event, ui ) {
+				//$( "#amount" ).val( ui.value );
+				$("#value04").text(ui.value);
+			}
+		});
+		$("#slider-range-max05").slider({
+			range: "max",
+			min: 0,
+			max: 100,
+			value: 15,
+			stop: function( event, ui ) {
+				//$( "#amount" ).val( ui.value );
+				$("#value05").text(ui.value);
+			}
+		});
+    });
+</script>
 
 
 </body>
