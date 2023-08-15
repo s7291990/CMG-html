@@ -26,6 +26,16 @@ common = {
             $(".sub-header-wrap ul li a").removeClass("on");
             $(this).addClass("on");
         });
+
+		$("body").on("click", ".btn-size01", function(){
+			$(".btn-size01").removeClass("on");
+			$(this).addClass("on");
+		});
+
+		$("body").on("click", ".btn-size02", function(){
+			$(".btn-size02").removeClass("on");
+			$(this).addClass("on");
+		});
     },
     popOpen:function(o){
         $(o).addClass("ing");

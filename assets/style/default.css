@@ -13,6 +13,7 @@ header .rela .gnb-box .gnb-list li{display:flex;justify-content:flex-start;align
 header .rela .gnb-box .gnb-list li + li{margin-left:25px;}
 header .rela .gnb-box .gnb-list li a{letter-spacing: 0.42px;font-size:14px;font-family: 'Poppins';font-weight:500;color:#fff;}
 header .rela .gnb-box .gnb-list li a.on{color:#FFBA00;}
+header .rela .gnb-box .gnb-list li a:hover{color:#FFBA00;}
 header .rela .side-cont{display:flex;justify-content:flex-start;align-items:center;}
 header .rela .side-cont .btn-point{display:flex;justify-content:flex-start;align-items:center;}
 header .rela .side-cont .btn-point .upic{display:flex;width:20px;height:20px;overflow:hidden;border-radius:50%;background-size:cover !important;}
