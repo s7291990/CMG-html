@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <title></title>
+    <link rel="stylesheet" href="../../assets/style/swiper.css" type="text/css"/>
+    <link rel="stylesheet" href="../../assets/style/common.css" type="text/css"/>
+
+    <script type="text/javascript" src="../../assets/script/ui.js"></script>
+    <script type="text/javascript" src="../../assets/script/lib/swiper.js"></script>
+    <script type="text/javascript" src="../../assets/script/common.js"></script>
+
+</head>
+<body>
+
+<div class="wrapper sub"><!-- start : wrapper -->
+
+    <header><!-- start : header -->
+        <div class="rela">
+            <h1>
+                <a href="javascript:void(0)"><img src="../../assets/image/etc/etc-logo.png" /></a>
+            </h1>
+            <div class="gnb-box">
+                <ul class="gnb-list">
+                    <li><a href="javascript:void(0)" class="on">About Us</a></li>
+                    <li><a href="javascript:void(0)">About PenCake</a></li>
+                    <li><a href="javascript:void(0)">START PenCake</a></li>
+                    <li><a href="javascript:void(0)">ModelLibrary</a></li>
+                    <li><a href="javascript:void(0)">Recent Creations</a></li>
+                </ul>
+            </div>
+            <div class="side-cont">
+                <a href="javascript:void(0)" class="btn-point">
+                    <div class="upic" style="background:url(../../assets/image/ico/ico-profile.svg);"></div>
+                    <div class="upoint">100,000 P</div>
+                </a>
+                <a href="javascript:void(0)" class="btn-charge">충전</a>
+                <a href="javascript:void(0)" class="btn-logout">로그아웃</a>
+            </div>
+        </div>
+
+
+
+    </header><!-- end : header -->
+
+    <div class="container" id="contents"><!-- start : container -->
+
+        <section class="sub-header-wrap">
+            <div class="mtit"><strong>PenCake</strong> AI IMAGE GENERATION</div>
+            <ul>
+                <li><a href="javascript:void(0)">AI IMAGE Generation</a></li>
+                <li><a href="javascript:void(0)">DATASET Management</a></li>
+                <li><a href="javascript:void(0)" class="on">MODEL Management</a></li>
+                <li><a href="javascript:void(0)">FINETUNED Models</a></li>
+            </ul>
+            <div class="mdesc">Select the number of images, image size, etc
+                <br />Enter the target keyword, or sentence, and create the desired image.</div>
+        </section>
+
+        <section class="model-page-wrap">
+            <ul class="status-list">
+                <li><a href="javascript:void(0)" class="on">My Model</a></li>
+                <li><a href="javascript:void(0)">Training Progress</a></li>
+                <li><a href="javascript:void(0)">Upload Status</a></li>
+            </ul>
+            <div class="btn-item-wrap">
+                <button type="button" class="on">TRAIN NEW MODEL</button>
+                <button type="button">UPLOAD MODEL</button>
+            </div>
+            <div class="msg">There are currently no Model available. Please Train a new model .</div>
+        </section>
+
+    </div><!-- end : container -->
+
+
+</div>
+
+<div id="pop01" class="dialog on">
+    <div class="pop-item-wrap">
+        <h1>TRAIN <strong>MODEL</strong></h1>
+        <a href="javascript:void(0)" class="btn-pop-close" onclick="common.popClose('#pop01')"><img src="../../assets/image/ico/ico-pop-close.svg" /></a>
+
+        <div class="form-row-wrap">
+            <div class="form-cols-wrap">
+                <div class="label">MODEL Name</div>
+                <div class="form-item-wrap">
+                    <input type="text" class="inp" />
+                </div>
+            </div>
+            <div class="form-cols-wrap">
+                <div class="label">Base MODEL</div>
+                <div class="form-item-wrap">
+                    <select class="select">
+                        <option>선택</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row-wrap">
+            <div class="form-cols-wrap">
+                <div class="label">Trigger Word</div>
+                <div class="form-item-wrap">
+                    <input type="text" class="inp" />
+                </div>
+            </div>
+            <div class="form-cols-wrap">
+                <div class="label">Main Body</div>
+                <div class="form-item-wrap">
+                    <select class="select">
+                        <option>선택</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row-wrap">
+            <div class="form-cols-wrap full">
+                <div class="label">MODEL Description
+                    <div class="tooltip">
+                        <img src="../../assets/image/ico/ico-tooltip.svg"/>
+                        <div class="tooltip-item-wrap">툴팁내용</div>
+                    </div>
+                </div>
+                <div class="form-item-wrap">
+                    <div class="textrea-wrap">
+                        <textarea class="textarea"></textarea>
+                        <div class="cnt">0/200</div>
+                    </div>
+                </div>
+                <div class="btn-item-wrap">
+                    <a href="javascript:void(0)">
+                        <img src="../../assets/image/ico/ico-creat.svg" />
+                        <span>CREAT DATASET</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row-wrap t01">
+            <div class="form-cols-wrap full">
+                <div class="label">Select DATASET
+                    <div class="tooltip">
+                        <img src="../../assets/image/ico/ico-tooltip.svg"/>
+                        <div class="tooltip-item-wrap">툴팁내용</div>
+                    </div>
+                </div>
+                <div class="form-item-wrap">
+                    <div class="textrea-wrap t01">
+                    </div>
+                </div>
+                <div class="training-item-wrap">
+                    <a href="javascript:void(0)">
+                        <img src="../../assets/image/ico/ico-training.svg" />
+                        <span>TRAINING</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html> 
