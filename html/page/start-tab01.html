@@ -135,7 +135,7 @@
                         <div id="slider-range-max01"></div>
                     </div>
                     <div class="slide-value-wrap">
-                        <div id="value01" class="value">960</div>
+                        <input type="text" id="value01" class="value" value="50" />
                         <div class="unit">px</div>
                     </div>
                 </div>
@@ -146,7 +146,7 @@
                         <div id="slider-range-max02"></div>
                     </div>
                     <div class="slide-value-wrap">
-                        <div id="value02" class="value">960</div>
+                        <input type="text" id="value02" class="value" value="50" />
                         <div class="unit">px</div>
                     </div>
                 </div>
@@ -162,7 +162,7 @@
                         <div id="slider-range-max03"></div>
                     </div>
                     <div class="slide-value-wrap">
-                        <div id="value03" class="value">50</div>
+                        <input type="text" id="value03" class="value" value="50" />
                     </div>
                 </div>
 
@@ -208,7 +208,7 @@
                         <div id="slider-range-max04"></div>
                     </div>
                     <div class="slide-value-wrap">
-                        <div id="value04" class="value">960</div>
+                        <input type="text" id="value04" class="value" value="960" />
                     </div>
                 </div>
                 <div class="stit">Image Weight</div>
@@ -217,7 +217,7 @@
                         <div id="slider-range-max05"></div>
                     </div>
                     <div class="slide-value-wrap">
-                        <div id="value05" class="value">960</div>
+                        <input type="text" id="value05" class="value" value="960" />
                     </div>
                 </div>
 
@@ -298,9 +298,10 @@
 			value: 15,
 			stop: function( event, ui ) {
 				//$( "#amount" ).val( ui.value );
-				$("#value01").text(ui.value);
+				$("#value01").val(ui.value);
 			}
 		});
+
 		$("#slider-range-max02").slider({
 			range: "max",
 			min: 0,
@@ -308,7 +309,7 @@
 			value: 15,
 			stop: function( event, ui ) {
 				//$( "#amount" ).val( ui.value );
-				$("#value02").text(ui.value);
+				$("#value02").val(ui.value);
 			}
 		});
 		$("#slider-range-max03").slider({
@@ -318,7 +319,7 @@
 			value: 15,
 			stop: function( event, ui ) {
 				//$( "#amount" ).val( ui.value );
-				$("#value03").text(ui.value);
+				$("#value03").val(ui.value);
 			}
 		});
 		$("#slider-range-max04").slider({
@@ -328,7 +329,7 @@
 			value: 15,
 			stop: function( event, ui ) {
 				//$( "#amount" ).val( ui.value );
-				$("#value04").text(ui.value);
+				$("#value04").val(ui.value);
 			}
 		});
 		$("#slider-range-max05").slider({
@@ -338,9 +339,27 @@
 			value: 15,
 			stop: function( event, ui ) {
 				//$( "#amount" ).val( ui.value );
-				$("#value05").text(ui.value);
+				$("#value05").val(ui.value);
 			}
 		});
+
+        $("body").on("keyup", "input.value", function(){
+            var _val = $(this).val();
+            var _id = $(this).attr("id");
+            if(_id=="value01"){
+                $( "#slider-range-max01" ).slider("value", _val);
+            }else if(_id=="value02"){
+                $( "#slider-range-max02" ).slider("value", _val);
+            }else if(_id=="value03"){
+                $( "#slider-range-max03" ).slider("value", _val);
+            }else if(_id=="value04"){
+                $( "#slider-range-max04" ).slider("value", _val);
+            }else if(_id=="value05"){
+                $( "#slider-range-max05" ).slider("value", _val);
+            }
+
+        });
+
     });
 </script>
 
